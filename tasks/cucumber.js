@@ -9,12 +9,6 @@
 'use strict';
 module.exports = function(grunt) {
     grunt.registerMultiTask('cucumberjs', 'Run cucumber.js features', function() {
-
-        var runtimeArgs = require('../../../features/config/personal.json');
-        grunt.option('features', runtimeArgs.features);
-        grunt.option('format', runtimeArgs.format);
-        grunt.option('tags', runtimeArgs.tags);
-        
         var done = this.async();
 
         var options = this.options({
