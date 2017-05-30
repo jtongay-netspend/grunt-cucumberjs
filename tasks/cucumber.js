@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         grunt.option('features', runtimeArgs.features);
         grunt.option('format', runtimeArgs.format);
         grunt.option('tags', runtimeArgs.tags);
-        
+
         var done = this.async();
 
         var options = this.options({
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
             format: 'html',
             saveJson: false,
             theme: 'foundation',
-            templateDir: 'features/templates',
+            templateDir: 'features/tests',
             tags: '',
             require: '',
             debug: false,
